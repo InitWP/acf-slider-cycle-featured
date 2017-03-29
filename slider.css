@@ -1,0 +1,70 @@
+/**
+ * slider.css
+ *
+ * Styles related to a slider module (not its content!)
+ *
+**/
+
+/***************************************** Default Slider  */
+
+.slider {
+	position: relative;
+}
+
+/***************************************** Default Slider Pager */
+
+.slider--pager {
+	display: none;
+	list-style: none;
+	position: absolute;
+}
+
+.slider--pager li {
+	background: url(../../img/mainNav-bullet.png) no-repeat 100% -29px;
+	cursor: pointer;
+	float: left;
+	text-indent: -9999px;
+	width: 28px;
+}
+
+.slider--pager li.slider--pager-is-active {
+	background: url(../../img/mainNav-bullet.png) no-repeat 100% 0;
+}
+
+/***************************************** Slider Featured */
+
+.slider-featured {
+	margin: 0 -25px 170px;
+	position: relative;
+}
+
+.slider-featured--slide {
+	background-position: 50% 0;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+@media screen and (min-width: 450px) {
+
+	.slider-featured {
+		margin: 0 -70px 15px -70px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.slider-featured {
+		border-top: 0;
+	}
+
+}
+
+@media screen and (min-width: 1170px) {
+
+	.slider-featured {
+		min-height: 504px;
+	}
+
+}
