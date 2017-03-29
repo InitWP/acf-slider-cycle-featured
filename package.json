@@ -5,28 +5,30 @@
 	"description": "A featured posts slider based on cycle2.js which can be populated with a post type.",
 	"files": [
 		"slider.css",
-		"slider.js",
+		"slider.js"
     ],
 	"dependencies": {
 		"jquery.cycle2.js": "https://raw.githubusercontent.com/malsup/cycle2/master/build/jquery.cycle2.min.js"
 	},
 	"actions": {
-		"insertAfter": {
-			"searchValue": "* Custom Blocks *************************************/",
-			"newValue": {
-				"file": "acf-slider-loop.php"
+		"insertAfter": [
+			{
+				"searchValue": "* Custom Blocks *************************************/",
+				"newValue": {
+					"file": "acf-slider-loop.php"
+				},
+				"files": [
+					"template-homepage.php"
+				]
 			},
-			"files": [
-				"template-homepage.php"
-			]
-		},
-		"insertAfter": {
-			"searchValue": "'post-thumbnails' );",
-			"newValue": "\tadd_image_size('Slider large', '1170', '500', true);",
-			"files": [
-				"functions.php"
-			]
-		},
+			{
+				"searchValue": "'post-thumbnails' );",
+				"newValue": "\tadd_image_size('Slider large', '1170', '500', true);",
+				"files": [
+					"functions.php"
+				]
+			}
+		],
 		"addAdvancedCustomFields": {
 			"files": [
 				"group_589a1ad7b41b7.json"
