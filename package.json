@@ -8,7 +8,8 @@
 		"slider.js"
     ],
 	"dependencies": {
-		"jquery.cycle2.js": "https://raw.githubusercontent.com/malsup/cycle2/master/build/jquery.cycle2.min.js"
+		"jquery.cycle2.js": "https://raw.githubusercontent.com/malsup/cycle2/master/build/jquery.cycle2.min.js",
+		"acf-manager": "module"
 	},
 	"actions": {
 		"insertAfter": [
